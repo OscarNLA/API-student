@@ -8,10 +8,12 @@ namespace APIstudent.Models
 {
     public class DataContext:DbContext 
     {
-        public DataContext(): base("Default Connection")
+        public DataContext(): base("DefaultConnection")
         {
 
 
         }
+
+        public System.Data.Entity.DbSet<APIStudent.Models.Student> Students { get; set; }
     }
 }
